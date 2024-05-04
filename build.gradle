@@ -10,11 +10,16 @@ repositories {
 }
 
 dependencies {
+    //! 이거
     testImplementation platform('org.junit:junit-bom:5.9.1')
+
+    //! 이거
+    // JUnit5 를 위한 테스트 API와 실행 엔진을 제공
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 
 test {
+    //! 이거
     useJUnitPlatform()
 }
 

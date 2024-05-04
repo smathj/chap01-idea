@@ -1,9 +1,11 @@
 package chap03;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("ExpiryDateCalculatorTest 테스트 클래스")
 public class ExpiryDateCalculatorTest {
 
     private void assertExpiryDate(PayData payData, LocalDate expectedExpiryDate) {
