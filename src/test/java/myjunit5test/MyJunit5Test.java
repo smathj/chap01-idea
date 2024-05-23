@@ -36,6 +36,14 @@ public class MyJunit5Test {
         System.out.println("MyJunit5Test.afterEach");
     }
 
+    @Disabled
+    @Test
+    @DisplayName("이 테스트는 실행하지 않습니다")
+    void disabled() {
+        System.out.println("이 테스트는 실행되지 않습니다");
+    }
+
+
     @Test
     @DisplayName("assertTrue - 참 단정")
     void test1() {
@@ -163,7 +171,7 @@ public class MyJunit5Test {
     }
 
     @Test
-    @DisplayName("assertThrows - 특정 예외가 발생했음을 단정")
+    @DisplayName("assertDoesNotThrow - 예외가 발생하지 않음을 단정")
     void test11() {
         System.out.println("MyJunit5Test.test11");
         assertDoesNotThrow(() -> {
